@@ -1,0 +1,2 @@
+class RepostQueue < ApplicationRecord
+end

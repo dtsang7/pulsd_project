@@ -1,0 +1,26 @@
+<div class="create">
+  <div class="container">
+   	<%= form_for(@product) do |f| %>  
+  		<div class="field"> 
+    		<%= f.label :pname %>
+    		<%= f.text_area :pname %><br>
+
+    		<%= f.label :description %>
+    		<%= f.text_area :description %><br>
+
+    		<%= f.label "Start time" %>
+     		<%= f.datetime_field :start_time %><br> 
+
+     		<%= f.label "End time" %>
+     		<%= f.datetime_field :end_time %><br> 
+
+     		<%= f.label :price %>
+            <%= number_field(:product, :price, step: 0.01) %><br>
+
+  		</div>
+  		<div class="actions"> 
+    		<%= f.submit "Create" %> 
+  		</div> 
+		<% end %>
+  </div>
+</div>

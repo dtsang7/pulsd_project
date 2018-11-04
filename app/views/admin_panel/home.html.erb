@@ -1,0 +1,14 @@
+<div class="products">
+  <div class="container">
+    <% @products.each do |product| %> 
+      <div class="product"> 
+        <p class="text"><%= product.pname %></p> 
+        <p class="time"><%= product.start_time %></p> 
+        <p class="time"><%= product.end_time %></p>
+        <p class="number"><%= product.price %></p>
+        <p class="content"><%= product.description %></p>
+      </div> 
+    <% end %>
+    <%= link_to 'New Product', "admin_panel/new" %>
+  </div>
+</div>
